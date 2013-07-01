@@ -25,3 +25,6 @@ System constist from 3 parts:
 - upload file;
 - pause/resume for uploading/downloading (stretch goal).
 
+DEV system can be reached here:
+http://tomcat-mediaes.rhcloud.com/
+
