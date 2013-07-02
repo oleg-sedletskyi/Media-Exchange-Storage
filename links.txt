@@ -1,0 +1,3 @@
+Test application on remote server:
+http://tomcat-mediaes.rhcloud.com/DemoTomcat/DemoServlet
+
