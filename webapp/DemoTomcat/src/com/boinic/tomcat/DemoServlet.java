@@ -21,7 +21,7 @@ public class DemoServlet extends HttpServlet {
 	        Connection con = null;
 	        Statement st = null;
 	        ResultSet rs = null;
-	        String myVersion = "";
+	        String myVersion = "x";
 	 
 	        //String url = "jdbc:mysql://127.3.224.130:3306/java"; //make sure that this database name exists;
 	        String url = "JunkDB:mysql://127.3.96.130:3306"; //make sure that this database name exists;
@@ -46,6 +46,8 @@ public class DemoServlet extends HttpServlet {
 	 
 	        } catch (SQLException ex) {
 	            myVersion = ex.getMessage();
+	            System.out.println(myVersion);
+	            
 	        } finally {
 	            try {
 	                if (rs != null) {
@@ -60,6 +62,7 @@ public class DemoServlet extends HttpServlet {
 	 
 	            } catch (SQLException ex) {
 	                myVersion = ex.getMessage();
+	                System.out.println(myVersion);
 	            }
 	        }
 	        return myVersion;
@@ -80,7 +83,8 @@ public class DemoServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		PrintWriter out = response.getWriter();
 		out.println("Hello from Servlet");
-		databaseCall();
+		out.println(databaseCall());
+		
 		out.println("After DB query");
 	}
 
