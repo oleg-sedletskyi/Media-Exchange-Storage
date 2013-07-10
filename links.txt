@@ -1,3 +1,6 @@
 Test application on remote server:
 http://tomcat-mediaes.rhcloud.com/DemoTomcat/DemoServlet
 
+Database connection:
+https://www.openshift.com/forums/openshift/mysql-cannot-create-jdbc-drive-exception
+
